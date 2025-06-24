@@ -1,0 +1,203 @@
+Du trittst in Hundekot. Misery Index: 1
+Du hast den ganzen Tag einen schlechten Haartag. Misery Index: 2
+Du hast den ganzen Tag einen Bad Hair Day. Misery Index: 3
+Du stehst im Supermarkt und die Person vor dir hat einen vollen Wagen und zahlt mit Cent-Münzen. Misery Index: 4
+Du findest einen Parkplatz und merkst, dass du kein Kleingeld hast. Misery Index: 5
+Du verschüttest Kaffee über deine neue weiße Bluse. Misery Index: 6
+Dein Lieblingsessen ist ausverkauft. Misery Index: 7
+Du verbrennst dir die Zunge an heißem Kaffee. Misery Index: 8
+Du stößt dir den kleinen Zeh. Misery Index: 9
+Du bemerkst, dass du ein Loch in der Socke hast. Misery Index: 10
+Du schreibst eine lange E-Mail und der Computer stürzt ab, bevor du sie speichern kannst. Misery Index: 11
+Du wirst von einem Regen überrascht und hast keinen Schirm. Misery Index: 12
+Du hast eine Verabredung und die Person ist 30 Minuten zu spät. Misery Index: 13
+Du merkst, dass du deine Kopfhörer vergessen hast, wenn du reist. Misery Index: 14
+Du wirst von einem Vogel angekackt. Misery Index: 15
+Du hast einen Platten am Fahrrad auf dem Weg zur Arbeit. Misery Index: 16
+Du verschluckst dich beim Essen und hustest lange. Misery Index: 17
+Du siehst einen Freund, aber er sieht dich nicht. Misery Index: 18
+Du schneidest dich beim Rasieren. Misery Index: 19
+Du hast Zahnschmerzen und der Zahnarzt hat keinen Termin frei. Misery Index: 20
+Du bist im Supermarkt und dein Lieblingsprodukt ist ausverkauft. Misery Index: 21
+Du bist im Flugzeug und dein Sitznachbar schnarcht die ganze Zeit. Misery Index: 22
+Du hast ein Meeting und deine Internetverbindung ist sehr schlecht. Misery Index: 23
+Du vergisst deinen Regenschirm im Zug. Misery Index: 24
+Du gehst ins Kino und der Film, den du sehen willst, ist ausverkauft. Misery Index: 25
+Du erzählst einen Witz und niemand lacht. Misery Index: 26
+Du bist auf einer Party und der Gastgeber spielt schlechte Musik. Misery Index: 27
+Du gehst ins Fitnessstudio und alle Geräte sind belegt. Misery Index: 28
+Du bist der/die Letzte, der/die bei einem Quiz die Antwort weiß. Misery Index: 29
+Du wachst auf und hast verschlafen. Misery Index: 30
+Deine Lieblingsserie wird abgesetzt. Misery Index: 31
+Dein Wecker klingelt nicht. Misery Index: 32
+Du verbringst Stunden mit der Suche nach etwas, das direkt vor deiner Nase lag. Misery Index: 33
+Du bist der/die Einzige, der/die sich falsch angezogen hat für eine Veranstaltung. Misery Index: 34
+Du bekommst einen Sonnenbrand. Misery Index: 35
+Du wirst von einer Biene gestochen. Misery Index: 36
+Du wirst bei einem Online-Spiel gesperrt. Misery Index: 37
+Du machst einen Witz und er wird falsch verstanden. Misery Index: 38
+Du bist auf Diät und es gibt nur verlockende Süßigkeiten. Misery Index: 39
+Du merkst, dass du dein Badetuch im Schwimmbad vergessen hast. Misery Index: 40
+Du merkst, dass du falsche Schuhe an hast, wenn du tanzen musst. Misery Index: 41
+Du merkst, dass du deine Badesachen vergessen hast, wenn du am Strand bist. Misery Index: 42
+Du merkst, dass du beim Kochen das falsche Gewürz verwendet hast. Misery Index: 43
+Du bist im Urlaub und dein Hotelzimmer ist nicht das, was du erwartet hast. Misery Index: 44
+Du wirst von einem Hund gejagt. Misery Index: 45
+Deine Schuhe sind zu eng. Misery Index: 46
+Du hast einen wichtigen Anruf und der Akku deines Telefons ist leer. Misery Index: 47
+Du bist in einem Geschäft und der Verkäufer ist sehr aufdringlich. Misery Index: 48
+Du triffst auf der Straße eine Person, die du vermeiden willst. Misery Index: 49
+Du wirst von einem Callcenter-Mitarbeiter belästigt. Misery Index: 50
+Du musst an einem Feiertag arbeiten. Misery Index: 51
+Du merkst, dass du die Tür offen gelassen hast, als du aus dem Haus gegangen bist. Misery Index: 52
+Du stolperst vor vielen Leuten. Misery Index: 53
+Du verlierst deine Sonnenbrille im Meer. Misery Index: 54
+Du ziehst dir einen riesigen Splitter ein. Misery Index: 55
+Dein Chef ruft dich am Wochenende an. Misery Index: 56
+Du schläfst in der Bahn ein und verpasst deine Haltestelle. Misery Index: 57
+Du triffst auf einen Verwandten, den du nicht magst. Misery Index: 58
+Du merkst, dass du vergessen hast, deine Wäsche aus der Waschmaschine zu nehmen. Misery Index: 59
+Du bist beim Liebesspiel zu laut und die Nachbarn klopfen. Misery Index: 60
+Du hast einen Kater vom Vortag und musst trotzdem performen. Misery Index: 60
+Du kriegst eine Rechnung, die viel höher ist als erwartet. Misery Index: 60
+Du vergisst den Geburtstag eines engen Freundes. Misery Index: 60
+Du verlierst deine Schlüssel. Misery Index: 60
+Du kaufst dir ein neues Gerät und es funktioniert nicht. Misery Index: 60
+Dein Kind/Haustier erbricht auf dich. Misery Index: 60
+Du musst Überstunden machen, obwohl du schon Pläne hast. Misery Index: 60
+Dein Nachbar bohrt am Sonntag um 7 Uhr morgens. Misery Index: 60
+Du findest eine tote Maus in deiner Küche. Misery Index: 60
+Du verlierst eine Wette mit hohen Einsätzen. Misery Index: 60
+Du merkst, dass du im Dunkeln auf etwas Ekelerregendes getreten bist. Misery Index: 60
+Du bist in einem Fahrstuhl mit einem Furzenden. Misery Index: 60
+Du merkst, dass dein Gepäck am Flughafen viel zu schwer ist. Misery Index: 60
+Du wirst in einem vollen Bus und jemand niest dir ins Gesicht. Misery Index: 60
+Du vergisst deinen Geldbeutel zu Hause. Misery Index: 60
+Du findest Schimmel in deinem Kühlschrank. Misery Index: 60
+Du bist beim Arzt und musst dich entblößen, aber hast vergessen, die Intimrasur zu machen. Misery Index: 61
+Du merkst erst nach dem Stuhlgang, dass das Toilettenpapier alle ist und niemand in der Nähe. Misery Index: 62
+Du bist in der Umkleidekabine und deine Hose reißt, wenn du dich bückst. Misery Index: 63
+Du hast eine intime Verabredung und dein/e Partner/in hat Mundgeruch. Misery Index: 64
+Dein Internet fällt aus, wenn du dringend etwas erledigen musst. Misery Index: 65
+Du wachst mit einem Kater auf und musst arbeiten. Misery Index: 65
+Dein Auto springt nicht an. Misery Index: 65
+Du merkst, dass du dir die Haare falsch gefärbt hast. Misery Index: 65
+Du bist auf einem Date und der Person ist sehr langweilig. Misery Index: 65
+Du hast einen wichtigen Auftritt und deine Stimme versagt mitten im Satz. Misery Index: 66
+Du bist auf einer Party und erzählst eine peinliche Geschichte über dich, die niemand lustig findet. Misery Index: 67
+Du bist in einem Vorstellungsgespräch und dein Magen knurrt extrem laut. Misery Index: 68
+Du bist in einem Restaurant und beim Essen spritzt dir etwas ins Gesicht deines/deiner Gegenübers. Misery Index: 69
+Dein Handy fällt ins Klo. Misery Index: 70
+Du triffst einen Ex-Partner mit seiner/ihrer neuen Liebe. Misery Index: 70
+Dein Gepäck geht auf Reisen verloren. Misery Index: 70
+Du bist beim Friseur und der Schnitt ist schrecklich. Misery Index: 70
+Du bemerkst, dass dein Akku leer ist, wenn du dringend telefonieren musst. Misery Index: 70
+Du bekommst eine Allergische Reaktion auf etwas, das du gegessen hast. Misery Index: 70
+Du findest eine Kakerlake in deiner Küche. Misery Index: 70
+Du verbringst Stunden mit einem Online-Formular und es stürzt ab. Misery Index: 70
+Du stehst im Aufzug fest. Misery Index: 70
+Du verlierst deine Brille/Kontaktlinsen. Misery Index: 70
+Du sitzt im Flugzeug neben einem schreienden Baby. Misery Index: 70
+Du hast einen wichtigen Anruf und der Akku deines Telefons ist leer. Misery Index: 70
+Du wirst beim Online-Shopping über den Tisch gezogen. Misery Index: 70
+Du bist im Urlaub und das Wetter ist die ganze Zeit schlecht. Misery Index: 70
+Du bist in einer wichtigen Besprechung und musst dringend aufs Klo, aber du kannst nicht gehen. Misery Index: 71
+Du nimmst an einem Team-Meeting per Video teil und merkst, dass du vergessen hast, deine Hose anzuziehen. Misery Index: 72
+Du wirst im Fitnessstudio beim Versuch, ein neues Gerät zu benutzen, völlig blamiert. Misery Index: 73
+Du bist bei einem Date und verschüttest dir ein Getränk direkt über den Schoß, sodass es aussieht wie Urin. Misery Index: 74
+Du vergisst einen wichtigen Termin. Misery Index: 75
+Du schläfst während eines wichtigen Meetings ein. Misery Index: 75
+Du hast eine Verabredung und die Person kommt nicht. Misery Index: 75
+Du bist in einem Geschäft und der Alarm geht los, als du hinausgehst. Misery Index: 75
+Du hast ein peinliches Familiengeheimnis und es wird in der Öffentlichkeit enthüllt. Misery Index: 76
+Du bist auf einer Bühne und hast einen Blackout, vergisst deinen Text. Misery Index: 77
+Du wirst von einem Bekannten angesprochen, der sich aber total irrt und dich für jemand anderen hält. Misery Index: 78
+Du merkst mitten in einem Gespräch, dass du eine üble Fahne hast und dein/e Gesprächspartner/in es riecht. Misery Index: 79
+Du stehst im Stau und musst dringend auf Toilette. Misery Index: 80
+Du bemerkst, dass du den ganzen Tag mit offener Hose herumgelaufen bist. Misery Index: 80
+Du wirst in den falschen Chat geschickt und liest peinliche Dinge. Misery Index: 80
+Du merkst, dass du dein Haustier in der Wohnung eingesperrt hast, ohne Wasser/Futter. Misery Index: 80
+Du brichst dir einen Zahn beim Essen. Misery Index: 80
+Du merkst, dass du deinen Geldbeutel in einer Bar vergessen hast. Misery Index: 80
+Du bekommst einen Stromschlag von einem defekten Gerät. Misery Index: 80
+Du wirst beim Akt von einem Familienmitglied überrascht. Misery Index: 80
+Du musst eine Rede halten und hast plötzlich Schluckauf. Misery Index: 81
+Du bist auf einem Gruppenfoto und merkst später, dass du die Augen verdreht hast oder einen Grimasse gezogen hast. Misery Index: 82
+Du wirst in einem Restaurant erwischt, wie du heimlich Reste einpackst. Misery Index: 83
+Du bist in einem Bewerbungsgespräch und deine Hose platzt. Misery Index: 84
+Du sendest eine peinliche Nachricht an die falsche Person. Misery Index: 85
+Du hast Zahnschmerzen und der Zahnarzt hat keinen Termin frei. Misery Index: 85
+Du verlierst eine wichtige Datei auf deinem Computer. Misery Index: 85
+Du hast dein Ticket für ein Konzert/Event verloren. Misery Index: 85
+Du merkst, dass du dein Mikrofon im Online-Meeting anhattest, als du geredet hast. Misery Index: 85
+Du findest eine Schlange in deinem Garten. Misery Index: 85
+Du hast eine wichtige Präsentation und Furzt leise, aber deutlich. Misery Index: 86
+Du bist im Supermarkt und dein/e Freund/in ruft laut eine peinliche Frage über dein Intimleben. Misery Index: 87
+Du findest ein peinliches Tagebuch aus deiner Jugend, das jemand gelesen hat. Misery Index: 88
+Du bist in einer Bibliothek und dein Handy klingelt mit einem sehr lauten, unangemessenen Klingelton. Misery Index: 89
+Du merkst erst nach dem Einkauf, dass du deine EC-Karte vergessen hast. Misery Index: 90
+Du bist zu spät zu einem Vorstellungsgespräch. Misery Index: 90
+Du bekommst eine Lebensmittelvergiftung. Misery Index: 90
+Dein Kühlschrank geht kaputt und alle Lebensmittel verderben. Misery Index: 90
+Du merkst, dass du kein Toilettenpapier mehr hast, wenn du auf der Toilette sitzt. Misery Index: 90
+Du wirst von einem Callcenter-Mitarbeiter belästigt. Misery Index: 90
+Du bist auf Reisen und deine Kreditkarte wird gesperrt. Misery Index: 90
+Du bekommst eine unerwünschte Nachricht von einem Stalker. Misery Index: 90
+Du bist auf einer Beerdigung und lachst unkontrolliert. Misery Index: 91
+Du wirst in der Öffentlichkeit mit einer Straftat beschuldigt, die du nicht begangen hast. Misery Index: 92
+Du verlierst dein Gedächtnis mitten in einem wichtigen Gespräch. Misery Index: 93
+Du wirst Zeuge, wie dein Idol etwas Abscheuliches tut. Misery Index: 94
+Du hast eine Präsentation und dein Laptop geht kaputt. Misery Index: 95
+Du gehst zum Arzt und er findet etwas Beunruhigendes. Misery Index: 95
+Du verlierst den Autoschlüssel in einem Gully. Misery Index: 95
+Du bist in einer Menschenmenge und merkst, dass du deine Hose verloren hast. Misery Index: 96
+Du hast einen Unfall und musst dich in der Öffentlichkeit entblößen. Misery Index: 97
+Du merkst, dass du dein Portemonnaie in einem anderen Land vergessen hast. Misery Index: 98
+Du merkst, dass dein Pass abgelaufen ist, kurz vor einer Reise. Misery Index: 98
+Du bist auf einem öffentlichen Platz und deine Kleidung fällt auseinander. Misery Index: 99
+Du hast eine ernsthafte Krankheit, von der du nichts wusstest, und es wird in der Öffentlichkeit bekannt. Misery Index: 100
+Du wirst fälschlicherweise des sexuellen Missbrauchs beschuldigt und öffentlich an den Pranger gestellt. Misery Index: 100
+Du bist in einer Live-Übertragung und dir fällt ein peinlicher Gegenstand aus deiner Tasche. Misery Index: 100
+Deine peinlichsten Internetsuchen werden öffentlich bekannt. Misery Index: 100
+Du wirst beim Versuch, etwas Peinliches zu verstecken, erwischt. Misery Index: 100
+Du hast einen peinlichen körperlichen Ausbruch (Erbrechen, Durchfall) an einem öffentlichen Ort. Misery Index: 100
+Du bist in einer Fernsehsendung und sagst etwas extrem Dummes, das viral geht. Misery Index: 100
+Du findest heraus, dass dein Tagebuch oder deine privaten Nachrichten veröffentlicht wurden. Misery Index: 100
+Du bist bei einem wichtigen Event und dein Mikrofon ist die ganze Zeit offen, während du über jemanden lästerst. Misery Index: 100
+Du wirst als der/die Täter/in eines peinlichen Streiches überführt, der schlimme Folgen hatte. Misery Index: 100
+Du wirst ohnmächtig an einem Ort, wo du alleine bist, und niemand findet dich stundenlang. Misery Index: 100
+Deine intimsten Geheimnisse werden vor deiner Familie enthüllt. Misery Index: 100
+Du schickst aus Versehen ein intimes Foto an die falsche Gruppe und es verbreitet sich. Misery Index: 100
+Du bist in einer Gruppe und jemand erzählt eine peinliche Geschichte über dich aus deiner Kindheit. Misery Index: 100
+Du wirst auf frischer Tat ertappt, wie du etwas äußerst Peinliches machst. Misery Index: 100
+Du bist der/die Hauptdarsteller/in in einem viralen Video, das dich extrem blamiert. Misery Index: 100
+Deine Eltern/Kinder finden deine privaten Spielzeuge oder Unterlagen. Misery Index: 100
+Du verlierst deine Zähne in der Öffentlichkeit. Misery Index: 100
+Du bist in einem wichtigen Meeting und dein Handy klingelt mit einem peinlichen Klingelton. Misery Index: 100
+Du findest heraus, dass jemand deine Identität gestohlen und damit peinliche Dinge getan hat. Misery Index: 100
+Du bist auf einer Bühne und du fällst auf der Treppe hin. Misery Index: 100
+Du wirst in der Öffentlichkeit für eine Person des anderen Geschlechts gehalten. Misery Index: 100
+Du hast einen peinlichen Ausschlag an einer sichtbaren Stelle. Misery Index: 100
+Du gehst zum Friseur und er versaut dir die Haare komplett, du siehst lächerlich aus. Misery Index: 100
+Du hast einen wichtigen Termin und deine Kleidung ist dreckig oder zerrissen. Misery Index: 100
+Du verlierst deine Stimme mitten in einer wichtigen Präsentation. Misery Index: 100
+Du bist im Flugzeug und dein Magen dreht sich um, du musst dich übergeben. Misery Index: 100
+Du merkst, dass du den ganzen Tag mit einem Fleck auf deiner Hose herumgelaufen bist, der wie Urin aussieht. Misery Index: 100
+Du wirst von einem Paparazzo mit einem peinlichen Gesichtsausdruck fotografiert, und das Bild geht viral. Misery Index: 100
+Du bist in einer Show und die Kameras fangen dich ein, wie du in der Nase bohrst. Misery Index: 100
+Du bist auf einer Dating-App und findest deine Eltern/Kinder dort. Misery Index: 100
+Du hast einen peinlichen Albtraum und schreist laut im Schlaf, sodass es alle hören. Misery Index: 100
+Du wirst in der Öffentlichkeit für einen Bettler gehalten und angesprochen. Misery Index: 100
+Du bist in einer vollen U-Bahn und merkst, dass du vergessen hast, dir Deo aufzutragen. Misery Index: 100
+Du verlierst deine Prothese in der Öffentlichkeit. Misery Index: 100
+Du wirst von einem Hund angepinkelt, während du auf der Straße stehst. Misery Index: 100
+Du merkst, dass du aus Versehen die falschen Medikamente genommen hast und bizarre Nebenwirkungen hast. Misery Index: 100
+Du bist in einer Notaufnahme und musst deine intimsten körperlichen Probleme offenbaren. Misery Index: 100
+Du wirst vor versammelter Mannschaft als "Versager" bezeichnet. Misery Index: 100
+Du bist auf einer Party und jemand hat deine Getränke mit Abführmittel versetzt. Misery Index: 100
+Du wirst Zeuge, wie dein bester Freund/deine beste Freundin dich verrät. Misery Index: 100
+Du findest heraus, dass du in einer Reality-Show bist, ohne es zu wissen. Misery Index: 100
+Du bist in einer Gerichtsverhandlung und deine peinlichsten Geheimnisse werden offengelegt. Misery Index: 100
+Du bist bei einem wichtigen Geschäftsessen und verschluckst dich so sehr, dass du erstickst. Misery Index: 100
+Du merkst, dass du der/die einzige bist, der/die an eine Party in Kostüm gekommen ist. Misery Index: 100
+Du bist in der Öffentlichkeit und dein Körper gibt sehr laute Geräusche von sich (Magen, Gelenke etc.). Misery Index: 100
