@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shit Happens – Spielraum</title>
+  <link rel="stylesheet" href="game-style.css">
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <h1>Shit Happens – Spielraum</h1>
+      <div class="game-header-bar">
+        <span id="player-name"></span>
+        <span id="game-status"></span>
+        <button class="btn" onclick="window.location.href='index.html'">Zurück zur Lobby</button>
+      </div>
+    </header>
+    <main id="game-main">
+      <section class="opponent-area" id="opponent-area"></section>
+      <section class="table-area" id="table-area">
+        <div class="draw-pile-area">
+          <div class="draw-pile" id="draw-pile" onclick="drawCard()">Karte ziehen</div>
+          <div class="drawn-card" id="drawn-card"></div>
+        </div>
+        <div class="hand-area" id="hand-area"></div>
+      </section>
+      <section class="action-area" id="action-area"></section>
+      <section class="game-log" id="game-log"></section>
+    </main>
+    <footer>
+      <small>© 2025 Shit Happens Online</small>
+    </footer>
+  </div>
+  <div id="overlay" class="game-overlay" style="display:none;">
+    <div class="overlay-content" id="overlay-content"></div>
+  </div>
+  <script src="game-data.js"></script>
+  <script src="game-logic.js"></script>
+</body>
+</html>
