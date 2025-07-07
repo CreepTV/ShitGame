@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things Happens - Online Game</title>
+    <link rel="stylesheet" href="css/startpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background particles/animation -->
+    <div class="background-animation">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Header mit Profil -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fa-solid fa-person" style="color: var(--accent-primary);"></i>
+                <i class="fa-solid fa-person" style="color: var(--accent-primary);"></i>
+                <i class="fa-solid fa-person"></i>
+                <span class="title-header">STUFF HAPPENS</span>
+            </div>
+            <div class="user-profile" id="userProfile" style="display: none;">
+                <img src="" alt="Profile" id="profileImage" class="profile-img">
+                <span id="userName">Player</span>
+                <button class="settings-btn" id="settingsBtn">
+                    <i class="fas fa-cog"></i>
+                </button>
+            </div>
+            <div class="auth-buttons" id="authButtons">
+                <button class="btn btn-secondary" id="loginBtn">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Anmelden
+                </button>
+                <button class="btn btn-primary" id="registerBtn">
+                    <i class="fas fa-user-plus"></i>
+                    Registrieren
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="game-title">
+                    <span class="title-main">STUFF HAPPENS</span>
+                    <span class="title-sub">Das ultimative Misery Index Spiel</span>
+                </h1>
+                <p class="game-description">
+                    Bewerte Lebenssituationen nach ihrem Misery Index und sammle Karten. 
+                    Ist ein Sonnenbrand schlimmer als den Vater nackt zu sehen? Finde es heraus!
+                </p>
+                
+                <div class="main-actions">
+                    <button class="btn btn-primary btn-large" id="createRoomBtn">
+                        <i class="fas fa-plus"></i>
+                        Raum erstellen
+                    </button>
+                    <button class="btn btn-secondary btn-large" id="joinRoomBtn">
+                        <i class="fas fa-door-open"></i>
+                        Raum beitreten
+                    </button>
+                    <a href="pages/room-demo.html?room=DEMO" class="btn btn-accent btn-large" style="text-decoration: none;">
+                        <i class="fas fa-play"></i>
+                        Demo spielen
+                    </a>
+                </div>
+
+                <div class="quick-join">
+                    <input type="text" placeholder="Raum-Code eingeben..." id="roomCodeInput" class="room-input">
+                    <button class="btn btn-accent" id="quickJoinBtn">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Stats -->
+        <div class="stats-section">
+            <div class="stat-card">
+                <i class="fas fa-trophy"></i>
+                <div class="stat-info">
+                    <span class="stat-number" id="gamesWon">0</span>
+                    <span class="stat-label">Gewonnene Spiele</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-gamepad"></i>
+                <div class="stat-info">
+                    <span class="stat-number" id="gamesPlayed">0</span>
+                    <span class="stat-label">Gespielte Spiele</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-users"></i>
+                <div class="stat-info">
+                    <span class="stat-number" id="onlinePlayers">0</span>
+                    <span class="stat-label">Online Spieler</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- How to Play -->
+        <div class="how-to-play">
+            <h2>Wie gespielt wird</h2>
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <div class="rule-number">1</div>
+                    <h3>Karten ordnen</h3>
+                    <p>3 Karten werden nach Misery Index sortiert ausgeteilt</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-number">2</div>
+                    <h3>Karte ziehen</h3>
+                    <p>Ziehe eine Karte und schätze ihren Platz im Index</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-number">3</div>
+                    <h3>Richtig raten</h3>
+                    <p>Rate richtig und gewinne die Karte</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-number">4</div>
+                    <h3>10 Karten gewinnen</h3>
+                    <p>Erste Person mit 10 Karten gewinnt!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features-section">
+            <div class="container">
+                <h2 class="section-title">Warum Shit Happens Online?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Überall spielen</h3>
+                        <p>Spiele mit Freunden von überall auf der Welt - nur ein Browser nötig!</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Echtzeit Multiplayer</h3>
+                        <p>Blitzschnelle Synchronisation dank modernster Firebase-Technologie</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Sichere Räume</h3>
+                        <p>Private Räume mit individuellen Codes für deine Spielrunde</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Statistiken</h3>
+                        <p>Verfolge deine Fortschritte und werde zum Misery-Index Experten</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Ready</h3>
+                        <p>Perfekt optimiert für Smartphone, Tablet und Desktop</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3>Flexibel</h3>
+                        <p>Von 2 bis 8 Spieler - perfekt für jede Gruppengröße</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Modes Section -->
+        <div class="game-modes-section">
+            <div class="container">
+                <h2 class="section-title">Spielmodi</h2>
+                <div class="modes-grid">
+                    <div class="mode-card mode-classic">
+                        <div class="mode-header">
+                            <i class="fas fa-classic"></i>
+                            <h3>Klassisch</h3>
+                            <span class="mode-badge">Beliebt</span>
+                        </div>
+                        <div class="mode-content">
+                            <p>Das original Shit Happens Erlebnis mit allen 100 Szenarien</p>
+                            <ul class="mode-features">
+                                <li><i class="fas fa-check"></i> Alle Original-Karten</li>
+                                <li><i class="fas fa-check"></i> 2-8 Spieler</li>
+                                <li><i class="fas fa-check"></i> 15-30 Min Spielzeit</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mode-card mode-quick">
+                        <div class="mode-header">
+                            <i class="fas fa-lightning-bolt"></i>
+                            <h3>Schnellrunde</h3>
+                            <span class="mode-badge new">Neu</span>
+                        </div>
+                        <div class="mode-content">
+                            <p>Perfekt für zwischendurch - nur 5 Karten zum Gewinnen</p>
+                            <ul class="mode-features">
+                                <li><i class="fas fa-check"></i> Nur 50 zufällige Karten</li>
+                                <li><i class="fas fa-check"></i> 2-6 Spieler</li>
+                                <li><i class="fas fa-check"></i> 5-15 Min Spielzeit</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mode-card mode-custom">
+                        <div class="mode-header">
+                            <i class="fas fa-cog"></i>
+                            <h3>Benutzerdefiniert</h3>
+                        </div>
+                        <div class="mode-content">
+                            <p>Erstelle deine eigenen Regeln und Kartensätze</p>
+                            <ul class="mode-features">
+                                <li><i class="fas fa-check"></i> Eigene Karten hinzufügen</li>
+                                <li><i class="fas fa-check"></i> Anpassbare Regeln</li>
+                                <li><i class="fas fa-check"></i> Community-Inhalte</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Games / Leaderboard -->
+        <div class="recent-games-section">
+            <div class="container">
+                <div class="recent-games-grid">
+                    <div class="recent-games-card">
+                        <h3>Aktive Räume</h3>
+                        <div class="games-list">
+                            <div class="game-item">
+                                <div class="game-info">
+                                    <span class="room-name">Marco's Chaos Runde</span>
+                                    <span class="room-players">3/6 Spieler</span>
+                                </div>
+                                <button class="btn btn-sm btn-accent">Beitreten</button>
+                            </div>
+                            <div class="game-item">
+                                <div class="game-info">
+                                    <span class="room-name">Schnelle Runde</span>
+                                    <span class="room-players">2/4 Spieler</span>
+                                </div>
+                                <button class="btn btn-sm btn-accent">Beitreten</button>
+                            </div>
+                            <div class="game-item">
+                                <div class="game-info">
+                                    <span class="room-name">Weekend Warriors</span>
+                                    <span class="room-players">5/8 Spieler</span>
+                                </div>
+                                <button class="btn btn-sm btn-accent">Beitreten</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="leaderboard-card">
+                        <h3>Top Spieler</h3>
+                        <div class="leaderboard-list">
+                            <div class="leader-item">
+                                <span class="rank">#1</span>
+                                <div class="player-info">
+                                    <span class="player-name">ShitMaster3000</span>
+                                    <span class="player-score">147 Siege</span>
+                                </div>
+                                <div class="player-badge gold">👑</div>
+                            </div>
+                            <div class="leader-item">
+                                <span class="rank">#2</span>
+                                <div class="player-info">
+                                    <span class="player-name">MiseryExpert</span>
+                                    <span class="player-score">134 Siege</span>
+                                </div>
+                                <div class="player-badge silver">🥈</div>
+                            </div>
+                            <div class="leader-item">
+                                <span class="rank">#3</span>
+                                <div class="player-info">
+                                    <span class="player-name">ChaosKing</span>
+                                    <span class="player-score">122 Siege</span>
+                                </div>
+                                <div class="player-badge bronze">🥉</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Shit Happens</h4>
+                    <p>Das ultimative Online Misery Index Spiel</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Spiel</h4>
+                    <ul>
+                        <li><a href="#rules">Spielregeln</a></li>
+                        <li><a href="#modes">Spielmodi</a></li>
+                        <li><a href="#cards">Alle Karten</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#discord">Discord</a></li>
+                        <li><a href="#reddit">Reddit</a></li>
+                        <li><a href="#facebook">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#help">Hilfe</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                        <li><a href="#bugs">Bug Report</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Shit Happens Online. Basierend auf dem Original-Spiel.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Settings Modal -->
+    <div class="modal" id="settingsModal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Account Einstellungen</h3>
+                <button class="close-btn" id="closeSettingsBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="setting-group">
+                    <label>Profilbild</label>
+                    <div class="profile-upload">
+                        <img src="" alt="Current Profile" id="currentProfileImg" class="upload-preview">
+                        <input type="file" id="profileUpload" accept="image/*" style="display: none;">
+                        <button class="btn btn-secondary" onclick="document.getElementById('profileUpload').click()">
+                            <i class="fas fa-camera"></i>
+                            Bild ändern
+                        </button>
+                    </div>
+                </div>
+                <div class="setting-group">
+                    <label for="displayName">Anzeigename</label>
+                    <input type="text" id="displayName" class="setting-input" placeholder="Dein Name">
+                </div>
+                <div class="setting-group">
+                    <label for="soundEnabled">Sound aktiviert</label>
+                    <label class="switch">
+                        <input type="checkbox" id="soundEnabled" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="setting-group">
+                    <button class="btn btn-danger" id="logoutBtn">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Abmelden
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Creation Modal -->
+    <div class="modal" id="createRoomModal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <i class="fas fa-plus-circle"></i>
+                    <h3>Neuen Raum erstellen</h3>
+                </div>
+                <button class="close-btn" id="closeCreateRoomBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="setting-group">
+                    <label for="roomName">
+                        <i class="fas fa-tag"></i>
+                        Raumname
+                    </label>
+                    <input type="text" id="roomName" class="setting-input" placeholder="Mein Shit Happens Raum" maxlength="50">
+                    <small class="help-text">Gib deinem Raum einen aussagekräftigen Namen</small>
+                </div>
+                <div class="setting-group">
+                    <label for="maxPlayers">
+                        <i class="fas fa-users"></i>
+                        Maximale Spieleranzahl
+                    </label>
+                    <select id="maxPlayers" class="setting-input">
+                        <option value="2">2 Spieler</option>
+                        <option value="3">3 Spieler</option>
+                        <option value="4" selected>4 Spieler</option>
+                        <option value="5">5 Spieler</option>
+                        <option value="6">6 Spieler</option>
+                        <option value="7">7 Spieler</option>
+                        <option value="8">8 Spieler</option>
+                    </select>
+                    <small class="help-text">Empfohlen: 3-6 Spieler für optimales Spielerlebnis</small>
+                </div>
+                <div class="setting-group">
+                    <label for="gameMode">
+                        <i class="fas fa-gamepad"></i>
+                        Spielmodus
+                    </label>
+                    <select id="gameMode" class="setting-input">
+                        <option value="classic" selected>Klassisch (10 Karten zum Gewinnen)</option>
+                        <option value="quick">Schnellspiel (5 Karten zum Gewinnen)</option>
+                        <option value="marathon">Marathon (15 Karten zum Gewinnen)</option>
+                    </select>
+                </div>
+                <div class="setting-group">
+                    <label for="placementTimer">
+                        <i class="fas fa-clock"></i>
+                        Platzierungszeit
+                    </label>
+                    <select id="placementTimer" class="setting-input">
+                        <option value="30">30 Sekunden</option>
+                        <option value="45">45 Sekunden</option>
+                        <option value="60" selected>60 Sekunden</option>
+                        <option value="90">90 Sekunden</option>
+                        <option value="120">2 Minuten</option>
+                    </select>
+                    <small class="help-text">Zeit pro Runde für die Kartenplatzierung</small>
+                </div>
+                <div class="setting-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="isPrivate">
+                        <span class="checkmark"></span>
+                        <div class="checkbox-content">
+                            <strong>Privater Raum</strong>
+                            <small>Nur mit Raum-Code beitreten</small>
+                        </div>
+                    </label>
+                </div>
+                <div class="setting-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="allowSpectators">
+                        <span class="checkmark"></span>
+                        <div class="checkbox-content">
+                            <strong>Zuschauer erlauben</strong>
+                            <small>Andere können zuschauen ohne mitzuspielen</small>
+                        </div>
+                    </label>
+                </div>
+                <div class="modal-actions">
+                    <button class="btn btn-secondary" id="cancelCreateRoom">
+                        <i class="fas fa-times"></i>
+                        Abbrechen
+                    </button>
+                    <button class="btn btn-primary" id="confirmCreateRoom">
+                        <i class="fas fa-plus"></i>
+                        Raum erstellen
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Room Join Modal -->
+    <div class="modal" id="joinRoomModal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <i class="fas fa-door-open"></i>
+                    <h3>Raum beitreten</h3>
+                </div>
+                <button class="close-btn" id="closeJoinRoomBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="setting-group">
+                    <label for="joinRoomCode">
+                        <i class="fas fa-key"></i>
+                        Raum-Code
+                    </label>
+                    <input type="text" id="joinRoomCode" class="setting-input room-code-input" 
+                           placeholder="ABC123" maxlength="6" style="text-transform: uppercase;">
+                    <small class="help-text">6-stelliger Code vom Raum-Ersteller</small>
+                </div>
+                <div class="setting-group">
+                    <label for="playerName">
+                        <i class="fas fa-user"></i>
+                        Dein Name
+                    </label>
+                    <input type="text" id="playerName" class="setting-input" 
+                           placeholder="Dein Spielername" maxlength="20">
+                    <small class="help-text">Name, der anderen Spielern angezeigt wird</small>
+                </div>
+                <div class="room-info" id="roomInfo" style="display: none;">
+                    <div class="room-preview">
+                        <div class="room-details">
+                            <h4 id="roomPreviewName">Raumname</h4>
+                            <div class="room-stats">
+                                <span id="roomPreviewPlayers">0/4 Spieler</span>
+                                <span id="roomPreviewMode">Klassisch</span>
+                                <span id="roomPreviewStatus">Warten</span>
+                            </div>
+                        </div>
+                        <div class="room-players" id="roomPreviewPlayerList">
+                            <!-- Players will be listed here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button class="btn btn-secondary" id="cancelJoinRoom">
+                        <i class="fas fa-times"></i>
+                        Abbrechen
+                    </button>
+                    <button class="btn btn-primary" id="confirmJoinRoom">
+                        <i class="fas fa-door-open"></i>
+                        Beitreten
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="js/startpage.js" type="module"></script>
+</body>
+</html>

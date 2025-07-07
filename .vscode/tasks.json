@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Firebase Serve",
+            "type": "shell",
+            "command": "firebase",
+            "args": ["serve", "--only", "hosting"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "new"
+            },
+            "problemMatcher": [],
+            "icon": {
+                "id": "flame",
+                "color": "terminal.ansiRed"
+            }
+        }
+    ]
+}

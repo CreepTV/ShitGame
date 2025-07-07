@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THINGS HAPPENS - Game Room</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Patrick+Hand+SC:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/room.css">
+</head>
+<body>
+    <!-- Background particles/animation -->
+    <div class="background-animation">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2>Lade Spielraum...</h2>
+            <p id="loadingText">Verbinde mit Spielern...</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="room-header">
+        <div class="header-content">
+            <div class="room-info">
+                <h1 class="room-title">
+                    <i class="fas fa-door-open"></i>
+                    Raum: <span id="roomCode">LOADING</span>
+                </h1>
+                <div class="room-status">
+                    <span class="status-indicator" id="roomStatus">Warten auf Spieler...</span>
+                    <span class="player-count">
+                        <i class="fas fa-users"></i>
+                        <span id="playerCount">0</span>/4
+                    </span>
+                </div>
+            </div>
+            
+            <div class="room-actions">
+                <button class="btn btn-secondary" id="inviteBtn">
+                    <i class="fas fa-share"></i>
+                    Einladen
+                </button>
+                <button class="btn btn-danger" id="leaveRoomBtn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    Verlassen
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Game Area -->
+    <main class="game-container">
+        <!-- Left Sidebar - Players -->
+        <aside class="players-sidebar">
+            <div class="sidebar-header">
+                <h3>
+                    <i class="fas fa-users"></i>
+                    Spieler
+                </h3>
+            </div>
+            
+            <div class="players-list" id="playersList">
+                <!-- Players will be dynamically added here -->
+            </div>
+            
+            <!-- Game Stats -->
+            <div class="game-stats">
+                <div class="stat-item">
+                    <span class="stat-label">Runde:</span>
+                    <span class="stat-value" id="currentRound">1</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Karten im Deck:</span>
+                    <span class="stat-value" id="cardsInDeck">96</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Game Area -->
+        <section class="game-area">
+            <!-- Waiting for Players Screen -->
+            <div class="waiting-screen" id="waitingScreen">
+                <div class="waiting-content">
+                    <div class="waiting-icon">
+                        <i class="fas fa-hourglass-half"></i>
+                    </div>
+                    <h2>Warten auf Spieler...</h2>
+                    <p>Mindestens 2 Spieler werden benötigt, um zu starten.</p>
+                    
+                    <div class="invite-section">
+                        <div class="invite-code">
+                            <label>Raum-Code teilen:</label>
+                            <div class="code-input-group">
+                                <input type="text" readonly id="shareRoomCode" value="">
+                                <button class="btn btn-accent" id="copyCodeBtn">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="invite-link">
+                            <label>Oder Link teilen:</label>
+                            <div class="link-input-group">
+                                <input type="text" readonly id="shareRoomLink" value="">
+                                <button class="btn btn-accent" id="copyLinkBtn">
+                                    <i class="fas fa-link"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-large" id="startGameBtn" style="display: none;">
+                        <i class="fas fa-play"></i>
+                        Spiel starten
+                    </button>
+                </div>
+            </div>
+
+            <!-- Game Play Area -->
+            <div class="gameplay-area" id="gameplayArea" style="display: none;">
+                <!-- Current Turn Info -->
+                <div class="turn-info">
+                    <div class="current-player">
+                        <span class="turn-label">Am Zug:</span>
+                        <div class="player-turn">
+                            <img src="" alt="" id="currentPlayerAvatar" class="player-avatar">
+                            <span id="currentPlayerName">Player</span>
+                        </div>
+                    </div>
+                    
+                    <div class="turn-timer">
+                        <div class="timer-circle">
+                            <span id="turnTimer">60</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Display Area -->
+                <div class="card-display-area">
+                    <!-- Current Card Display -->
+                    <div class="current-card-container" id="currentCard">
+                        <div class="card-placeholder">
+                            <i class="fas fa-question"></i>
+                            <p>Warte auf gezogene Karte...</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Draw Card Button (only for current player) -->
+                    <div class="draw-card-section" id="drawCardSection" style="display: none;">
+                        <button class="btn btn-primary btn-large" id="drawCardBtn">
+                            <i class="fas fa-hand-paper"></i>
+                            Karte ziehen
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Player Hand Area -->
+                <div class="player-hand-area">
+                    <div class="hand-header">
+                        <h3>Deine Hand</h3>
+                        <div class="cards-won">
+                            <i class="fas fa-trophy"></i>
+                            <span id="cardsWon">0</span>/10
+                        </div>
+                    </div>
+                    
+                    <div class="hand-cards" id="playerHand">
+                        <!-- Player's cards will be shown here with drop zones -->
+                    </div>
+                    
+                    <!-- Instructions for drag & drop -->
+                    <div class="placement-instructions" id="placementInstructions" style="display: none;">
+                        <p><i class="fas fa-hand-paper"></i> Ziehe die Karte an die richtige Position in deiner Hand!</p>
+                        <p><small>Sortiere nach Misery Index: niedrigere Werte links, höhere rechts</small></p>
+                    </div>
+                </div>
+
+                <!-- Voting Area (for other players) -->
+                <div class="voting-area" id="votingArea" style="display: none;">
+                    <div class="voting-content">
+                        <h3>Abstimmung</h3>
+                        <p><span id="votingPlayerName">Spieler</span> hat eine Karte platziert.</p>
+                        <div class="placement-preview" id="placementPreview">
+                            <!-- Show the placement preview -->
+                        </div>
+                        <p class="voting-question">Ist diese Platzierung korrekt?</p>
+                        
+                        <div class="voting-buttons">
+                            <button class="btn btn-success btn-large" id="voteYesBtn">
+                                <i class="fas fa-check"></i>
+                                Richtig
+                            </button>
+                            <button class="btn btn-danger btn-large" id="voteNoBtn">
+                                <i class="fas fa-times"></i>
+                                Falsch
+                            </button>
+                        </div>
+                        
+                        <div class="voting-status">
+                            <p>Warten auf Stimmen: <span id="votingProgress">0/2</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Sidebar - Game Log -->
+        <aside class="game-log-sidebar">
+            <div class="sidebar-header">
+                <h3>
+                    <i class="fas fa-history"></i>
+                    Spielverlauf
+                </h3>
+            </div>
+            
+            <div class="game-log" id="gameLog">
+                <div class="log-entry">
+                    <span class="log-time">12:34</span>
+                    <span class="log-message">Spiel gestartet</span>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Game End Modal -->
+    <div class="modal" id="gameEndModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>
+                    <i class="fas fa-trophy"></i>
+                    Spiel beendet!
+                </h2>
+            </div>
+            <div class="modal-body">
+                <div class="winner-announcement">
+                    <div class="winner-avatar">
+                        <img src="" alt="" id="winnerAvatar">
+                    </div>
+                    <h3 id="winnerName">Spieler</h3>
+                    <p>hat gewonnen!</p>
+                </div>
+                
+                <div class="final-scores">
+                    <h4>Endstand:</h4>
+                    <div class="scores-list" id="finalScores">
+                        <!-- Final scores will be shown here -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="playAgainBtn">
+                    <i class="fas fa-redo"></i>
+                    Nochmal spielen
+                </button>
+                <button class="btn btn-secondary" id="backToMenuBtn">
+                    <i class="fas fa-home"></i>
+                    Zum Hauptmenü
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Firebase CDN Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    
+    <!-- Game Scripts -->
+    <script type="module" src="../js/firebase-config.js"></script>
+    <script type="module" src="../js/room.js"></script>
+</body>
+</html>
